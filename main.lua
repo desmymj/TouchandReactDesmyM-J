@@ -14,4 +14,18 @@ display.setStatusBar(display.HiddenStatusBar)
 local blueButton = display.newImageRect("Images/Fast Button Inactive@2x.png",198, 96)
 blueButton.x = display.contentWidth/2
 blueButton.y = display.contentHeight/2
-blueButton.isVisible
+blueButton.isVisible = true
+
+--create red button, set its position and make it visible
+local redButton = display.newImageRect("Images/Fast Button Active@2x.png",198, 96)
+redButton.x = display.contentWidth/2
+redButton.y = display.contentHeight/2
+redButton.isVisible = false
+
+-- create text object, set its position and make it invisible
+local textObject = display.newText ("Clicked!", 0, 0, nil, 50)
+textObject.x = display.contentWidth/2
+textObject.y = display.contentHeight/3
+textObject:setTextColor (1, 1, 0)
+textObject.isVisible = false
+
